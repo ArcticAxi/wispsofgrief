@@ -1,0 +1,73 @@
+@import url(chota.css);
+/* icons from https://jam-icons.com/ */
+/* goal to host with Cloudflare Pages */
+/* minimal chota css framework */
+/* copying from Weebly page */
+
+:root {
+    --color-primary: #da1d50; /* brand color */
+}
+
+.nav {
+    background-color: white;
+    overflow: hidden;
+}
+
+.header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /*min-height: 5rem;*/
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 60px 0px 30px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 2px solid #f7f7f7;
+}
+
+html, body {
+    height: 100%
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /*min-height: 5rem; */
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 40px 0px;
+}
+
+.footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto 0px 3rem;
+}
+
+.footer a {
+  padding: 1rem 0.5rem;
+  color: var(--color-darkGrey);
+}
