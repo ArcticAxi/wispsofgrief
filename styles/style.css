@@ -1,16 +1,51 @@
 @import url(chota.css);
-/* icons from https://jam-icons.com/ */
+/* icons from https://jam-icons.com/ and some from iconfinder*/
 /* goal to host with Cloudflare Pages */
 /* minimal chota css framework */
 /* copying from Weebly page */
 
+/* 
+
+logo: slab serif, handwritten / script, or display font
+
+primary font (draw most attention, heading / logo?)
+secondary font (between primary and body)
+tertiary font (body): clean simple sans-serif
+accent font (decorative)
+*/
+
 :root {
-    --color-primary: #da1d50; /* brand color */
+    --color-primary: #9b91b3; /* brand color */
+    --bg-color: #121212;
+    --bg-secondary-color: #141414;
+    --font-color: #ededed;
+    --color-grey: #ccc;
+    --color-darkGrey: #777;
+    --color-lightGrey: #1f1f1f;
+    --font-size: 1.8rem;
+    --font-family-sans: 'Nunito', sans-serif;
+    --font-family-header: 'Bahianita', sans-serif;
+}
+
+h1 {
+    /* TODO: Use center align or left align ? */
+    text-align: left;
+}
+
+svg {
+    color: var(--color-primary);
 }
 
 .nav {
-    background-color: white;
+    background-color: var(--bg-secondary-color);
     overflow: hidden;
+}
+
+.nav a {
+    text-transform: uppercase;
+    /* TODO: Use mono or sans-serif ? */
+    font-family: var(--font-family-mono);
+    color: var(--color-grey);
 }
 
 .header {
@@ -18,43 +53,41 @@
     display: -ms-flexbox;
     display: flex;
     /*min-height: 5rem;*/
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 60px 0px 30px;
+    padding: 60px 0 20px;
+    background-color: var(--bg-secondary-color);
+}
+
+.header_text {
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: bolder;
+    margin: 0;
+    font-family: var(--font-family-header);
 }
 
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-    border-bottom: 2px solid #f7f7f7;
+    border-bottom: 2px solid var(--color-lightGrey);
+    z-index: 1;
 }
 
-html, body {
-    height: 100%
-}
-
-body {
-    display: flex;
-    flex-direction: column;
+#site {
+    padding: 0 0 60px;
 }
 
 .main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    /*min-height: 5rem; */
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 40px 0px;
+    max-width: 600px;
+    padding: 40px 20px 80px;
+    margin: 0 auto;
+}
+
+.sticky_main {
+    margin: 50px auto 0;
 }
 
 .footer {
@@ -64,10 +97,129 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: auto 0px 3rem;
 }
 
 .footer a {
   padding: 1rem 0.5rem;
   color: var(--color-darkGrey);
 }
+
+.main_poetry {
+    text-align: left;
+    line-height: 2;
+}
+
+
+
+/* Styling for image gallery */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 0 140px;
+}
+.gallery__strip {
+    /* min-height: 100vh; */
+}
+.gallery_border {
+    flex: 0 0 100%;
+    justify-content: flex-end;
+    background: var(--bg-color);
+    border-right: 2px solid var(--color-lightGrey);
+    position: relative;
+}
+
+@media (min-width: 500px) {
+    .gallery__strip__wrapper {
+        flex: 0 0 50%;
+   }
+}
+
+/* TODO: Do I want various columns to be offset slightly or all be equal?*/
+@media (min-width: 950px) {
+    .gallery {
+        /* height: 100vh; */
+   }
+    .gallery__strip.one {
+        transform: translateY(-1%);
+   }
+    .gallery__strip.three {
+        transform: translateY(-1%);
+   }
+    .gallery__strip.two {
+        transform: translateY(1%);
+   }
+    .gallery__strip__wrapper {
+        flex: 0 0 33.3%;
+   }
+}
+
+.photo {
+    position: relative;
+    text-align: right;
+    padding-bottom: 3rem;
+    overflow: hidden;
+}
+.photo__image img {
+    width: 90%;
+    transform: translateX(30%);
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+    margin-top: -60px;
+}
+
+.photo__name {
+    text-transform: uppercase;
+    font-family: var(--font-family-header);
+    font-size: 80px;
+    letter-spacing: 2px;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--font-color);
+    transition: 0.2s ease-in-out 0.2s;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.photo:hover .photo__image img {
+    transform: translateX(0%);
+}
+
+.photo:hover .photo__name {
+    color: var(--font-color);
+}
+
+input, textarea {
+    background-color: var(--bg-secondary-color);
+    color: var(--font-color);
+}
+
+::placeholder {
+    color: var(--color-darkGrey);
+}
+
+.description_required {
+    color: var(--color-darkGrey);
+}
+
+.input_field {
+    margin-bottom: 15px;
+}
+
+.contact_form {
+    max-width: 600px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+button {
+    padding: 1rem 3rem;
+}
+
+.gallery_index {
+    max-width: 500px;
+}
+
