@@ -11,4 +11,3 @@ function stickynavbar() {
   }
 }
 window.addEventListener('scroll', stickynavbar);
-console.log("Hello world!"); 

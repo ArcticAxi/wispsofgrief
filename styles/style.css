@@ -36,6 +36,17 @@ svg {
     color: var(--color-primary);
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; 
+}
+
+
 .nav {
     background-color: var(--bg-secondary-color);
     overflow: hidden;
@@ -116,22 +127,26 @@ svg {
     line-height: 2;
 }
 
-
-
 /* Styling for image gallery */
 
 .gallery {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    overflow: hidden;
+    /*overflow: hidden;*/
     max-width: 1300px;
     margin: auto;
     padding: 0 0 140px;
 }
+
 .gallery__strip {
-    /* min-height: 100vh; */
+    min-height: 340px;
 }
+
+.gallery__wrapper {
+    min-height: 340px;
+}
+
 .gallery_border {
     flex: 0 0 100%;
     justify-content: flex-end;
