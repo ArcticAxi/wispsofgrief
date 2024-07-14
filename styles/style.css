@@ -91,12 +91,16 @@ svg {
 }
 
 .footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .footer a {
