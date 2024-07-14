@@ -78,12 +78,16 @@ svg {
 
 #site {
     padding: 0 0 60px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .main {
     max-width: 600px;
     padding: 40px 20px 80px;
     margin: 0 auto;
+    flex-grow: 1;
 }
 
 .sticky_main {
@@ -91,7 +95,6 @@ svg {
 }
 
 .footer {
-    position: fixed;
     width: 100%;
     bottom: 0;
     display: -webkit-box;
