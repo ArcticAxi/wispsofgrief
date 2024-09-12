@@ -10,8 +10,8 @@
         <link href="https://fonts.bunny.net/css?family=Fira+Sans:800&display=swap" rel="stylesheet">
 
         <meta charset="UTF-8">
-        <meta name="description" content="Portfolio for poetry and art">
-        <meta name="keywords" content="poetry, portfolio">
+        <meta name="description" content="Website showcasing some poetry">
+        <meta name="keywords" content="poetry, grief">
         <meta name="author" content="ArcticAxi">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -28,12 +28,21 @@
             <nav class="nav" id="navbar">
                 <div class="nav-center">
                     <a href="index.html" class="active">Home</a>
-                    <a href="/pages/poetry.html">Poetry</a>
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="/pages/poetry.html">Poetry</a> 
+                          <!-- <i class="fa fa-caret-down"></i> -->
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="../poems/plight.html">Plight</a>
+                            <a href="../poems/starting_over.html">Starting Over</a>
+                            <a href="../poems/waiting.html">Waiting</a>
+                        </div>
+                      </div> 
                     <a href="/pages/about.html">About</a>
                 </div>
             </nav>
 
-            <main class="main" id="main_body">
+            <main class="main_text" id="main_body">
                 <h1>Welcome</h1> 
 
                 <p class="main_poetry">
@@ -47,7 +56,7 @@
                     <div class="gallery_border gallery_index">
                         <div class="gallery__strip">
                             <div class="photo">
-                                <div class="photo__name">Poetry</div>
+                                <div class="photo__name"><a href="/pages/poetry.html" class="href_title">Poetry</a></div>
                                 <div class="photo__image">
                                     <a href="/pages/poetry.html">
                                         <img src="images//poetry.JPG" />

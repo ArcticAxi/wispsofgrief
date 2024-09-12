@@ -15,9 +15,9 @@ accent font (decorative)
 */
 
 :root {
-    --color-primary: #516ece; /* brand color */
+    --color-primary: #6EACDA; /* brand color */
     --bg-color: #121212;
-    --bg-secondary-color: #141414;
+    --bg-secondary-color: #151515;
     --font-color: #ededed;
     --color-grey: #ccc;
     --color-darkGrey: #777;
@@ -46,7 +46,6 @@ body {
     scrollbar-width: none; 
 }
 
-
 .nav {
     background-color: var(--bg-secondary-color);
     overflow: hidden;
@@ -58,6 +57,57 @@ body {
     font-family: var(--font-family-mono);
     color: var(--color-grey);
 }
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    /* font-size: 16px;   */
+    border: none;
+    outline: none;
+    height: 50px;
+    padding: 0;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    border-radius: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: var(--color-lightGrey);
+  }
+  
+  svg {
+    fill: var(--font-color);
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--bg-secondary-color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    /* color: var(--font-color); */
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: var(--color-lightGrey);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
 .header {
     display: -webkit-box;
@@ -94,13 +144,17 @@ body {
     flex-direction: column;
 }
 
-.main {
-    max-width: 600px;
-    padding: 40px 20px 80px;
-    margin: 0 auto;
+main {
     flex-grow: 1;
 }
 
+.main_text {
+    max-width: 600px;
+    padding: 40px 20px 80px;
+    margin: 0 auto;
+}
+
+/* What's this even for?? I yeeted it from .js and nothing changed anyway */
 .sticky_main {
     margin: 50px auto 0;
 }
@@ -127,7 +181,15 @@ body {
     line-height: 2;
 }
 
+.justified {
+    text-align: justify;
+}
+
 /* Styling for image gallery */
+
+.href_title {
+    color: var(--font-color);
+}
 
 .gallery {
     display: flex;
@@ -136,7 +198,7 @@ body {
     /*overflow: hidden;*/
     max-width: 1300px;
     margin: auto;
-    padding: 0 0 140px;
+    padding: 0 30px 140px 0;
 }
 
 .gallery__strip {
@@ -163,18 +225,6 @@ body {
 
 /* TODO: Do I want various columns to be offset slightly or all be equal?*/
 @media (min-width: 950px) {
-    .gallery {
-        /* height: 100vh; */
-   }
-    .gallery__strip.one {
-        transform: translateY(-1%);
-   }
-    .gallery__strip.three {
-        transform: translateY(-1%);
-   }
-    .gallery__strip.two {
-        transform: translateY(1%);
-   }
     .gallery__strip__wrapper {
         flex: 0 0 33.3%;
    }
