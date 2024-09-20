@@ -1,6 +1,6 @@
 # ArcticAxi's poetry hub
 
-ArcticAxi.github.io is a minimalist dark-theme website showcasing some of my poetry using GitHub Pages. The intention was to create an aesthetically pleasing website that is not overwhelming.
+[ArctixAxi.github.io](https://ArcticAxi.github.io) is a minimalist dark-theme website showcasing some of my poetry using GitHub Pages. The intention was to create an aesthetically pleasing website that is not overwhelming.
 
 ## Markdown, HTML, and CSS
 The website uses only static HTML and CSS. The HTML files are built using a custom static site generator script in Python, processing a set of Markdown files. This greatly streamlines the process of uploading new poems and allows for the reusing of HTML components without JavaScript or server-side processing.
