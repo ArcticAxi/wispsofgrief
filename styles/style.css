@@ -30,6 +30,7 @@ accent font (decorative)
 h1 {
     /* TODO: Use center align or left align ? */
     text-align: left;
+    font-family: var(--font-family-mono);
 }
 
 svg {
