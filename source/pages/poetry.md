@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html><head><link rel="stylesheet" href="../../styles/style.css"><!-- Link Bunny Fonts for Bahianita (logo) and Nunito (body) family --><link href="https://fonts.bunny.net/css2?family=Bahianita&family=Nunito&display=swap" rel="stylesheet"> <!-- Trying to get gallery to work--><link href="https://fonts.bunny.net/css?family=Fira+Sans:800&display=swap" rel="stylesheet"><meta charset="UTF-8"><meta name="description" content="Website showcasing some poetry"><meta name="keywords" content="poetry, grief"><meta name="author" content="ArcticAxi"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Poetry &#149; Arctic Axi</title></head><body><div id="site"><header class="header"><p><a class="brand" href="../index.html"></p><p class="header_text">Arctic Axi</p><p></a></p></header><nav class="nav" id="navbar"><div class="nav-center"><p><a href="../index.html">Home</a></p><p><a href="/pages/poetry.html" class="active">Poetry</a></p><p><a href="/pages/about.html">About</a></p></div></nav><main class="main">
+<main class="main">
 <div class="main_text">
 <div>
 <h1>Poetry</h1>
@@ -48,13 +47,4 @@ exposing flesh and bone
 </div>
 </div> 
 </div>
-</main><footer class="footer">
-<div class="copyright">
-<p>
-&#169; 2024 - ArcticAxi
-</p>
-</div>
-</footer>
-<p></div>
-</body>
-</html></p>
+</main>

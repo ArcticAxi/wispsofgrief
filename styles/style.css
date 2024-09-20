@@ -1,17 +1,12 @@
 @import url(chota.css);
 /* icons from https://jam-icons.com/ and some from iconfinder*/
-/* goal to host with Cloudflare Pages */
 /* minimal chota css framework */
-/* copying from Weebly page */
 
 /* 
-
-logo: slab serif, handwritten / script, or display font
-
-primary font (draw most attention, heading / logo?)
-secondary font (between primary and body)
-tertiary font (body): clean simple sans-serif
-accent font (decorative)
+primary font (draw most attention, heading / logo): Bahianita
+secondary font (between primary and body): -
+tertiary font (body): Fira Sans
+accent font (decorative): Bahianita
 */
 
 :root {
@@ -56,6 +51,10 @@ body {
     text-transform: uppercase;
     /* TODO: Use mono or sans-serif ? */
     font-family: var(--font-family-mono);
+    color: var(--color-grey);
+}
+
+.href_title:visited {
     color: var(--color-grey);
 }
 
