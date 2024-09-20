@@ -1,4 +1,4 @@
-# ArcticAxi's poetry hub
+# ArctixAxi.github.io
 
 [ArctixAxi.github.io](https://ArcticAxi.github.io) is a minimalist dark-theme website showcasing some of my poetry using GitHub Pages. The intention was to create an aesthetically pleasing website that is not overwhelming.
 
