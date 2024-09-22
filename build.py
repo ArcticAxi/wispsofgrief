@@ -81,7 +81,7 @@ def build_poems():
         header.string = page_name.replace('_', ' ')
 
         img = page_soup.find(id="poem_img")
-        img['src'] = '../images/' + page_name + '.JPG'
+        img['src'] = '../images/' + page_name + '.jpeg'
 
         insert_to_tag('main_poetry', page_soup, poem_soup)
 
@@ -116,5 +116,7 @@ def build_html():
     build_index()
     build_poems()
     build_pages()
+
+    print("Build successful!")
 
 build_html()

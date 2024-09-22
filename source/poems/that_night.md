@@ -1,7 +1,9 @@
 some days
 I think about that night
-in Germany, a day's drive from home
-in a restaurant, was it Chinese?
+in Germany
+a day's drive from home
+in a restaurant 
+was it Chinese?
 or Indian?
 
 I can't remember much
