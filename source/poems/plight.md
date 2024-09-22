@@ -5,8 +5,7 @@ the circles beneath my gaze
 grow darker each tear’s embrace
 
 the muscles in my jaw 
-clenched, they turned raw
+clenching turned them raw
 
 each memory a stinging bite 
-see my pain, hear my plight 
-alone, I cannot fight  
+but their light still guides my night

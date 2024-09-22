@@ -3,7 +3,7 @@ you come
 only to go
 
 in my dreams, I fear your death
-in life, I live its consequence
+in life, I live its breath
 
 waking, I am stranded
 sleeping, I am drowning

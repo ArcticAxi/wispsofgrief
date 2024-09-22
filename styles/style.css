@@ -176,7 +176,7 @@ main {
   color: var(--color-darkGrey);
 }
 
-.main_poetry {
+#main_poetry {
     text-align: left;
     line-height: 2;
 }
