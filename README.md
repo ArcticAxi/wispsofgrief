@@ -1,4 +1,5 @@
 # Wisps of Grief
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1e16154a-3eac-4e15-867b-c953d54a852f/deploy-status)](https://app.netlify.com/projects/wispsofgrief/deploys)
 
 [![Wisps of Grief](/favicons/favicon.svg)](https://wispsofgrief.netlify.app/) 
 
