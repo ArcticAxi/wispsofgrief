@@ -10,7 +10,7 @@ accent font (decorative): Bahianita
 */
 
 :root {
-    --color-primary: #6EACDA; /* brand color */
+    --color-primary: #9c89ad; /* brand color */
     --bg-color: #121212;
     --bg-secondary-color: #151515;
     --font-color: #ededed;
@@ -51,11 +51,11 @@ body {
     text-transform: uppercase;
     /* TODO: Use mono or sans-serif ? */
     font-family: var(--font-family-mono);
-    color: var(--color-grey);
+    color: var(--font-color);
 }
 
 .href_title:visited {
-    color: var(--color-grey);
+    color: var(--color-primary);
 }
 
 .dropdown {
@@ -117,14 +117,13 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 60px 0 20px;
+    padding: 30px 0 0px;
     background-color: var(--bg-secondary-color);
 }
 
 .header_text {
     text-transform: uppercase;
-    font-size: 80px;
-    font-weight: bolder;
+    font-size: 100px;
     margin: 0;
     font-family: var(--font-family-header);
 }
@@ -188,7 +187,7 @@ main {
 /* Styling for image gallery */
 
 .href_title {
-    color: var(--font-color);
+    color: var(--color-primary);
 }
 
 .gallery {
