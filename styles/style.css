@@ -161,6 +161,7 @@ main {
 .footer {
     width: 100%;
     bottom: 0;
+    font-size: 1.6rem;;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -171,8 +172,12 @@ main {
 }
 
 .footer a {
-  padding: 1rem 0.5rem;
-  color: var(--color-darkGrey);
+  color: var(--color-grey);
+  text-decoration: underline;
+}
+
+.footer a:hover {
+    color: var(--font-color);
 }
 
 #main_poetry {
